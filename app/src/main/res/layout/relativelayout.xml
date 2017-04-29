@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Relative layout layout sangat fleksibel
+jadi widget bisa di taruh dimanapun tanpa ada peraturan seperti linearlayout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tV1Rl"
+        android:textSize="24sp"
+        android:text="jengjeng"/>
+    <!--id digunakan untuk mempermudah mengenal suatu widget dan juga sebagai nama yang unik dari sebuah
+    widget-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iV1Rl"
+        android:layout_below="@+id/tV1Rl"
+        android:src="@drawable/gans"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tV2Rl"
+        android:background="#ba3b3b"
+        android:textSize="24sp"
+        android:text="kanan"
+
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tV1Rl"
+        android:layout_toEndOf="@+id/tV1Rl" />
+    <!--di Relative layout ada juga peraturan yang dibuat di dalam widgetnya sepeti contohnya
+    textview di bawah ini di taruh di center vertical dalam layout jadi dia akan berada di tengah antara atas dan bawah -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tV3Rl"
+        android:layout_centerVertical="true"
+        android:textSize="24sp"
+        android:text="kanan"/>
+    <!--di Relative layout ada juga peraturan yang dibuat di dalam widgetnya sepeti contohnya
+   textview di bawah ini di taruh di center vertical dalam layout jadi dia akan berada di tengah antara kanan dan kriri -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tV4Rl"
+        android:textSize="24sp"
+        android:text="kanan"
+        android:layout_below="@+id/tV2Rl"
+        android:layout_toRightOf="@+id/tV2Rl"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@+id/tV2Rl"
+        android:layout_marginTop="61dp" />
+    <!--untuk lebih banyak tentang relative layout bisa buka di :
+    https://developer.android.com/reference/android/widget/RelativeLayout.LayoutParams.html?utm_source=udacity&utm_medium=course&utm_campaign=android_basics-->
+</RelativeLayout>

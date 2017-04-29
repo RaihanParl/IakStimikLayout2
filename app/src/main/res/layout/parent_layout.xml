@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--scrollview agar tampilan bisa di scroll-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--syarat memakai scrollview adalah WAJIB ada layout lagi di dalam scrollView-->
+    <!--Linearlayout adalah layout yang penuh peraturan contohnya di bawah
+    linear layoutnya di berikan  orientasi vertical jadi apapun widgetnya saat di taruh di
+    linearlllayout ini akan menurun terus sedangkan kalo horizontal akan kesamping terus-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#dd1d1d"
+        android:layout_weight="1"
+        android:textSize="34dp"
+        android:text="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="34dp"
+        android:background="#104d4d"
+        android:text="2" />
+<!--wheight digunakan untuk membagi tempat secara merata-->
+    <TextView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="4"
+        android:textSize="190sp"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textSize="190sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textSize="190sp"
+        />
+    </LinearLayout>
+</ScrollView>
